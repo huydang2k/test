@@ -9,13 +9,7 @@ struct Stack_node {
 };
 struct Stack {
 	Stack_node *top;
-};
-Stack *Stack_construct() {
- Stack *s;
- s=(Stack*)malloc(sizeof(Stack));
-s->top=NULL;
-return s;
-};
+
 bool isEmptyStack(Stack *s) {
 	return (!s->top)?true:false;
 }
